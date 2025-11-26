@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    /* Saída */
+    "outDir": "./dist",
+
+    /* Ambiente Node */
+    "module": "commonjs",
+    "target": "es2020",
+    "lib": ["es2020"],
+    "esModuleInterop": true,
+
+    /* Decorators obrigatórios para TypeORM */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    /* Tipagem */
+    "strict": true,
+    "skipLibCheck": true,
+
+    /* Mapeamento */
+    "sourceMap": true,
+
+  },
+  "include": ["src/**/*"]
+}
