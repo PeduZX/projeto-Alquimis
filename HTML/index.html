@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <img src="https://alquimis.com.br/wp-content/uploads/2025/03/logo-alquimis1.png" alt="">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Editar Perfil</a></li>
-                <li><a href="#">Login</a></li>
+            <img id="img-alquimis-nav" src="https://alquimis.com.br/wp-content/uploads/2025/03/logo-alquimis1.png"
+                alt="">
+            <ul id="ul-nav">
+                <li><a class="a-nav" href="#">Home</a></li>
+                <li><a class="a-nav" href="#">Controle de Estoque</a></li>
+                <li><a class="a-nav" href="#">Acompanhe o Estoque</a></li>
+                <li><a class="a-nav" href="#">Editar Perfil</a></li>
+                <li><a class="a-nav" href="#">Login</a></li>
             </ul>
         </nav>
     </header>
-    <main id="main-top">
-        <h1>Controle seu estoque</h1>
-        <div id="div-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Produto</th>
-                        <th>Quantidade</th>
-                        <th>Valor Unitário</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Exemplo</td>
-                        <td>20</td>
-                        <td>R$ 10,00</td>
-                        <td>
-                            <button>Editar</button>
-                            <button>Excluir</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </main>
-    <div id="container-main-mid">
-            <div id="green-ball">
-                <img src="#" alt="#">
+    <main id="major-main">
+        <main id="main-top">
+            <h1 id="h1-top">Controle seu estoque ALQUIMIS</h1>
+            <div id="div-table">
+                <span id="span-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Quantidade</th>
+                                <th>Valor Unitário</th>
+                                <th>Ações</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Exemplo</td>
+                                <td>20</td>
+                                <td>R$ 10,00</td>
+                                <td class="td-action-table">
+                                    <button class="btns-action-table" id="btn-table-edit">Editar</button>
+                                    <button class="btns-action-table" id="btn-table-delete">Excluir</button>
+                                </td>
+                                <td>⚠️</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </span>
             </div>
+        </main>
+        <div id="container-main-mid">
+            <div id="green-ball">
+                <img id="img-green-alquimis"
+                    src="https://alquimis.com.br/wp-content/uploads/2025/06/MAICON-25-1536x1024.jpg" alt="#">
+            </div>
+            <span class="span-aside-main-mid"> 
             <p>Algo Faltando?
                 Sem Problemas!
             </p>
-            <button>Adicionar Produto</button>
+            <a class="a-add-product" href="#">Adicionar Produto</a>
+        </span>
         </div>
         </div>
     </main>
@@ -63,5 +76,7 @@
             <p>Exemplo 3</p>
         </div>
     </main>
+    </main>
 </body>
+
 </html>

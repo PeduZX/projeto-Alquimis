@@ -2,17 +2,162 @@
 
 
 body{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "arimo", sans-serif;
+    background-color: #f2f2f2;
+}
+
+#major-main{
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+}
+
+#img-alquimis-nav{
+    width: 13vw;
+    height: 5vw;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f2f2f2;
-    
+    background-color: white;
     padding: 10px;
+}
+
+#ul-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+.a-nav{
+    color: #1E1E8F;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+.a-nav:hover{
+    color: #82D72E;
+    transition: 0.3s ease-in-out;
+    
+}
+
+#h1-top{
+    text-align: center;
+}
+
+#div-table{
+    display: flex;
+    justify-content: center;
+    
+}
+#span-table{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    width: 45vw;
+    padding: 40px;
+    border: white;
+}
+tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 6vw;
+}
+
+.td-action-table{
+    display: flex;
+    gap: 12px;
+
+}
+
+#btn-table-edit{
+    background-color: #1E1E8F;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 4vw;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#btn-table-edit:hover{
+    background-color: #0000ff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#btn-table-delete{
+    background-color: rgb(252, 94, 94);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 4vw;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#btn-table-delete:hover{
+    background-color: rgb(145, 13, 13);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#green-ball{
+    width: 40vw;
+    height: 40vw;
+    background-color: #8ae52d;
+    border-radius: 75% 25% 55% 35% / 50% 65% 35% 60%;
+    position: relative;
+    overflow: visible; 
+    z-index: 1;
+    left: 2vw;
+    top: 2vw
+}
+
+#img-green-alquimis{
+    position: absolute;
+    border-radius: 15px;
+    top: 8vw;
+    left: 12vw; 
+    width: 80%;
+    height: auto;
+    z-index: 2;
+}
+
+#container-main-mid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30vw;
+}
+.span-aside-main-mid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.a-add-product{
+    text-decoration: none;
+    background-color: #1E1E8F;
+    text-align: center;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 10vw;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.a-add-product:hover{
+    background-color: #0000ff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
