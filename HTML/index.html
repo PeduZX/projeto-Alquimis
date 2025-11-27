@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="/CSS/style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
@@ -21,8 +21,8 @@
                 <li><a class="a-nav" href="#h1-top">Home</a></li>
                 <li><a class="a-nav" href="#green-ball">Controle de Estoque</a></li>
                 <li><a class="a-nav" href="#h1-span-main-bottom">Acompanhe o Estoque</a></li>
-                <li><a class="a-nav" href="#">Editar Perfil</a></li>
-                <li><a class="a-nav" href="#">Login</a></li>
+                <li><a class="a-nav" href="/HTML/editarPerfil.html">Editar Perfil</a></li>
+                <li><a class="a-nav" href="/HTML/login.html">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -120,10 +120,38 @@
             <div class="card circle-card">Gráfico 3</div>
 
             <div class="card area-chart">Gráfico 2</div>
-
         </div>
     </main>
-    </main>
-</body>
 
+    <!-- POP-UP DE EDIÇÃO -->
+<div id="popup-edit" class="popup">
+    <div class="popup-content">
+        <span class="close" id="close-popup">&times;</span>
+
+        <h2>Editar Produto</h2>
+        <form class="form-pop-up" action="">
+        <label>Produto</label>
+        <input type="text" id="edit-product">
+
+        <div class="row-popup">
+            <div>
+                <label>Quantidade</label>
+                <input type="number" id="edit-qtd">
+            </div>
+
+            <div>
+                <label>Valor Unitário</label>
+                <input type="number" id="edit-valor">
+            </div>
+        </div>
+        <button class="btn-update">Atualizar</button>
+    </form>
+
+    </div>
+</div>
+
+    </main>
+
+    <script src="/JS/js-janelaPopUp.js"></script>
+</body>
 </html>

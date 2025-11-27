@@ -251,3 +251,107 @@ thead th, tbody td {
 }
 
 
+/* Janela pop-up das tabelas do main top */
+.popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(3px);
+    z-index: 999;
+}
+
+
+.popup-content {
+    background: #fff;
+    padding: 25px;
+    width: 45vw;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+ 
+}
+
+
+
+.popup-content h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+
+.close {
+    font-size: 26px;
+    cursor: pointer;
+    color: #444;
+    align-self: flex-end;
+}
+
+
+.popup-content input,
+.popup-content select {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+
+.row-popup {
+    display: flex;
+    gap: 40px;
+}
+
+
+.btn-update {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #1E1E8F;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #1E1E8F;
+}
+
+.btn-update:hover {
+  color: #ffffff;
+  transform: scale(1.02);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.btn-update::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1E1E8F;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+button:hover::before {
+  width: 250%;
+}
+
+.form-pop-up{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
