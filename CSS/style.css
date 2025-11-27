@@ -42,12 +42,14 @@ nav{
 }
 .a-nav:hover{
     color: #82D72E;
+    border-bottom: #82D72E 2px solid;
     transition: 0.3s ease-in-out;
     
 }
 
 #h1-top{
     text-align: center;
+    margin-top: 5vw;
 }
 
 #div-table{
@@ -59,11 +61,16 @@ nav{
     display: flex;
     justify-content: space-around;
     background-color: white;
-    width: 45vw;
+    width: 68vw;
     padding: 40px;
     border: white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 5vw;
 }
-tr{
+
+
+.tr-thead{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,12 +84,31 @@ tr{
 
 }
 
+.tr-tbody{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+thead th, tbody td {
+    width: 10vw;
+    text-align: left;
+}
+
+.td-action-table {
+    width: 10vw; 
+    justify-content: flex-start;
+}
+
+
+
 #btn-table-edit{
     background-color: #1E1E8F;
     color: white;
     border: none;
     padding: 10px;
-    width: 4vw;
+    width: 5vw;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -98,7 +124,7 @@ tr{
     color: white;
     border: none;
     padding: 10px;
-    width: 4vw;
+    width: 5vw;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -161,3 +187,67 @@ tr{
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
+
+#p-aside-main-mid{
+    font-size: 2vw;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+#h1-span-main-bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+}
+
+.h1-main-bottom{
+    text-align: center;
+    background-color: white;
+    width: 40%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#main-bottom {
+    width: 98%;
+    padding: 20px;
+}
+
+.dashboard {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.small {
+    height: 120px;
+}
+
+.chart-big {
+    grid-column: span 3;
+    height: 260px;
+}
+
+.circle-card {
+    grid-column: 4 / 5;
+    grid-row: 2 / 4; 
+    height: 400px; 
+}
+
+.area-chart {
+    grid-column: span 3;
+    height: 220px;
+}
+
+

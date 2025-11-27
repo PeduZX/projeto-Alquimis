@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 </head>
 
 <body>
@@ -14,9 +18,9 @@
             <img id="img-alquimis-nav" src="https://alquimis.com.br/wp-content/uploads/2025/03/logo-alquimis1.png"
                 alt="">
             <ul id="ul-nav">
-                <li><a class="a-nav" href="#">Home</a></li>
-                <li><a class="a-nav" href="#">Controle de Estoque</a></li>
-                <li><a class="a-nav" href="#">Acompanhe o Estoque</a></li>
+                <li><a class="a-nav" href="#h1-top">Home</a></li>
+                <li><a class="a-nav" href="#green-ball">Controle de Estoque</a></li>
+                <li><a class="a-nav" href="#h1-span-main-bottom">Acompanhe o Estoque</a></li>
                 <li><a class="a-nav" href="#">Editar Perfil</a></li>
                 <li><a class="a-nav" href="#">Login</a></li>
             </ul>
@@ -29,7 +33,7 @@
                 <span id="span-table">
                     <table>
                         <thead>
-                            <tr>
+                            <tr class="tr-thead">
                                 <th>Produto</th>
                                 <th>Quantidade</th>
                                 <th>Valor Unitário</th>
@@ -38,16 +42,48 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="tr-tbody">
                                 <td>Exemplo</td>
                                 <td>20</td>
                                 <td>R$ 10,00</td>
                                 <td class="td-action-table">
                                     <button class="btns-action-table" id="btn-table-edit">Editar</button>
-                                    <button class="btns-action-table" id="btn-table-delete">Excluir</button>
-                                </td>
+                                    <button class="btns-action-table" id="btn-table-delete">Excluir</button></td>
                                 <td>⚠️</td>
-                            </tr>
+                                  </tr>  
+                                  <tr class="tr-tbody">
+                                <td>Exemplo</td>
+                                <td>20</td>
+                                <td>R$ 10,00</td>
+                                <td class="td-action-table">
+                                    <button class="btns-action-table" id="btn-table-edit">Editar</button>
+                                    <button class="btns-action-table" id="btn-table-delete">Excluir</button></td>
+                                <td>✅</td>
+                                  <tr class="tr-tbody">
+                                <td>Exemplo</td>
+                                <td>20</td>
+                                <td>R$ 10,00</td>
+                                <td class="td-action-table">
+                                    <button class="btns-action-table" id="btn-table-edit">Editar</button>
+                                    <button class="btns-action-table" id="btn-table-delete">Excluir</button></td>
+                                <td>✅</td>
+                                  <tr class="tr-tbody">
+                                <td>Exemplo</td>
+                                <td>20</td>
+                                <td>R$ 10,00</td>
+                                <td class="td-action-table">
+                                    <button class="btns-action-table" id="btn-table-edit">Editar</button>
+                                    <button class="btns-action-table" id="btn-table-delete">Excluir</button></td>
+                                <td>✅</td>
+                                  <tr class="tr-tbody">
+                                <td>Exemplo</td>
+                                <td>20</td>
+                                <td>R$ 10,00</td>
+                                <td class="td-action-table">
+                                    <button class="btns-action-table" id="btn-table-edit">Editar</button>
+                                    <button class="btns-action-table" id="btn-table-delete">Excluir</button></td>
+                                <td>✅</td>
+                          </tr>
                         </tbody>
                     </table>
                 </span>
@@ -58,22 +94,33 @@
                 <img id="img-green-alquimis"
                     src="https://alquimis.com.br/wp-content/uploads/2025/06/MAICON-25-1536x1024.jpg" alt="#">
             </div>
-            <span class="span-aside-main-mid"> 
-            <p>Algo Faltando?
-                Sem Problemas!
-            </p>
-            <a class="a-add-product" href="#">Adicionar Produto</a>
-        </span>
+            <span class="span-aside-main-mid">
+                <p id="p-aside-main-mid">Algo Faltando?<br>
+                    Sem Problemas!
+                </p>
+                <a class="a-add-product" href="#">Adicionar Produto</a>
+            </span>
         </div>
         </div>
     </main>
     <main id="main-bottom">
-        <h1>Acompanhe seu estoque</h1>
-        <div class="div-products">
-            <img src="#" alt="#">
-            <p>Exemplo 1</p>
-            <p>Exemplo 2</p>
-            <p>Exemplo 3</p>
+        <span id="h1-span-main-bottom">
+            <h1 class="h1-main-bottom">Acompanhe seu estoque</h1>
+        </span>
+
+        <div class="dashboard">
+
+            <div class="card small">Entradas <i class="ri-arrow-up-line"></i></div>
+            <div class="card small">Saidas <i class="ri-arrow-down-line"></i></div>
+            <div class="card small">Lucro <i class="ri-money-dollar-circle-line"></i></div>
+            <div class="card small">Estoque<i class="ri-box-3-line"></i></div>
+
+            <div class="card chart-big">Gráfico 1</div>
+
+            <div class="card circle-card">Gráfico 3</div>
+
+            <div class="card area-chart">Gráfico 2</div>
+
         </div>
     </main>
     </main>
