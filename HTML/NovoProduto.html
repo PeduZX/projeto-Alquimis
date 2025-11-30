@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/CSS/NovoProduto.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img id="img-alquimis-nav" src="https://alquimis.com.br/wp-content/uploads/2025/03/logo-alquimis1.png"
+                alt="">
+            <ul id="ul-nav">
+                <li><a class="a-nav" href="#h1-top">Home</a></li>
+                <li><a class="a-nav" href="#green-ball">Controle de Estoque</a></li>
+                <li><a class="a-nav" href="#h1-span-main-bottom">Acompanhe o Estoque</a></li>
+                <li><a class="a-nav" href="/HTML/editarPerfil.html">Editar Perfil</a></li>
+                <li><a class="a-nav" href="/HTML/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form class="row g-3">
+
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Nome do Material</label>
+        <div class="div-icon-inputNome">
+            <i class="ri-file-ai-line"></i>
+            <input type="text" class="form-control" id="inputEmail4">
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Quantidade Atual</label>
+        <div class="div-icon-inputQtdAtual">
+            <i class="ri-hashtag"></i>
+            <input type="number" class="form-control" id="inputPassword4">
+        </div>
+    </div>
+
+    <div class="col-12">
+        <label for="inputAddress" class="form-label">Quantidade mínima</label>
+        <div class="div-icon-inputQtdMin">
+            <i class="ri-alert-line"></i>
+            <input type="number" class="form-control" id="inputAddress" placeholder="Ex.:10">
+        </div>
+    </div>
+
+    <div class="col-12">
+        <label class="form-label">Valor do item</label>
+        <div class="div-icon-inputValor input-group">
+            <span class="input-group-text" id="msg-input-value">R$</span>
+            <input 
+                type="number" 
+                class="form-control" 
+                aria-label="Amount (to the nearest dollar)" 
+                placeholder="Valor do item">
+            <span class="input-group-text" id="msg-input-value">.00</span>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <label class="form-label">Status</label>
+        <div class="div-icon-inputStatus">
+            <i class="ri-checkbox-circle-line"></i>
+            <select class="form-select" aria-label="Default select example" id="select-status">
+                <option selected>Qual é o Status</option>
+                <option value="1">✔</option>
+                <option value="2">⚠</option>
+                <option value="3">❌</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+
+</form>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
